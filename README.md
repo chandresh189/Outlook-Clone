@@ -2,6 +2,30 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+```
+##Open your terminal and then type
+
+$ git clone {the url to the GitHub repo}
+
+This clones the repo
+
+cd into the new folder and type
+
+$ npm install
+
+This installs the required dependencies
+
+To run the React project.
+$ npm start
+
+You are done! Now you can start React App or Make Changes.
+
+You can also do this way,
+
+Download the repo and then in the folder get GitBash and then Type npm Run and then npm start
+```
+
+
 ## Available Scripts
 
 In the project directory, you can run:
