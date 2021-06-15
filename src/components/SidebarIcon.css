@@ -4,16 +4,15 @@
 }
 
 .sidebar_icons {
-    flex: 0.05;
+    width: 47px;
     height: 100%;
     background-color: black;
+    /* box-shadow: 1px 1px 1px 1px #fff; */
 }
 
-.sidebar_icons .material-icons{
+.sidebar_icons .icons{
     color: white;
     padding: 18px 0;
-}
-
-.sidebar_icons span {
     cursor: pointer;
+    margin-right: 0;
 }

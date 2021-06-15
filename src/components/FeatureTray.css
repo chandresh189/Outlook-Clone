@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.features {
+    height: 100vh;
+    width: 215px;
+    background-color: #212121;
+}
+
+.features-icon {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 55px;
+    justify-content: left;
+    padding: 0;
+}
+
+#f-btn-inbox {
+    background-color: #0078D4;
+}
+
+#f-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+p {
+    font-size: 15px;
+}

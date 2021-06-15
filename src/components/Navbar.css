@@ -17,13 +17,13 @@ header {
     justify-content: space-between;
     background-color: #0078D4;
     color: white;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid black;
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 4px;
 }
 
 .header-left p{
@@ -69,7 +69,7 @@ header {
     padding: 0 10px;
 }
 
-header span {
+header .icons {
     padding: 10px;
     cursor: pointer;
 }
