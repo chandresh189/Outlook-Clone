@@ -69,6 +69,10 @@ header {
     padding: 0 10px;
 }
 
+header .icons:hover{
+    background-color: #106EBE;
+}
+
 header .icons {
     padding: 10px;
     cursor: pointer;

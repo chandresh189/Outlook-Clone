@@ -22,7 +22,7 @@ function Navbar() {
                     <span className="material-icons">search</span>
                     <input type="text" placeholder="Search" />
                 </div>
-                <div className="header-right">
+                <div className="header-right" >
                     <Forum className="icons" />
                     <Note_alt className="icons" />
                     <Event_available className="icons" />

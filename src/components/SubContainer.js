@@ -4,12 +4,15 @@ import MailHead from './MailHead'
 import SendMail from './SendMail'
 import "./SubContainer.css"
 
-function SubContainer() {
+function SubContainer(props) {
+    console.log(props);
     return (
         <div className="sub-container">
             <FeatureTray />
             <MailHead />
-            <SendMail />
+            {
+                props.show?<SendMail />:null
+            }
         </div>
     )
 }

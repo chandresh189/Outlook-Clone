@@ -15,6 +15,16 @@ function Mails() {
                     <p>This is a Message, just for testing</p>
                 </div>
             </div>
+            <div className="mail-1">
+                <div className="mail-profile">
+                    <Account />
+                </div>
+                <div className="mail-content">
+                    <h4>Title of another Mail</h4>
+                    <h5>Congratulations</h5>
+                    <p>This is another Message, just for testing</p>
+                </div>
+            </div>
         </div>
     )
 }
