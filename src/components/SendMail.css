@@ -1,6 +1,6 @@
 .send-mail {
     height: 100%;
-    width: 857px;
+    width: 832px;
     padding: 6px;
     background-color: #212121;
 }
@@ -81,4 +81,19 @@ input {
     justify-content: center;
     width: 90px;
     height: 32px;
+}
+
+#to, #cc {
+    font-size: large;
+    color: #005A9E;
+}
+
+#subject {
+    font-size: large;
+    color: whitesmoke;
+}
+
+#message {
+    font-size: large;
+    color: rgb(218, 251, 255);
 }

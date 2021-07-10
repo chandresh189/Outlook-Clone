@@ -2,7 +2,7 @@ import React from 'react';
 import SidebarIcon from './SidebarIcon';
 import "./Main.css";
 import SubHeading from './SubHeading';
-import MailHead from './MailHead';
+// import MailHead from './MailHead';
 
 function Main() {
     return (

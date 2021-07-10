@@ -8,14 +8,11 @@ import "./SubHeading.css";
 
 function SubHeading() {
     const [show, setData] = useState(false)
-    function show_SendMail() {
-        setData(true);
-    }
     return (
         <div className="main-section">
             <div className="sub-heading">
                 <MenuIcon className="option-icon" />
-                <button id='btn-1' onClick={show_SendMail}><p>Send message</p></button>
+                <button id='btn-1' onClick={()=>setData(!show)}><p>Send message</p></button>
                 <button id='btn-2'> <OpenMailIcon id="btn-icon" /> Mark all as read</button>
                 <button id='btn-3'> <UndoIcon id="btn-icon" /> Undo</button>
             </div>

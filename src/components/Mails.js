@@ -2,27 +2,19 @@ import React from 'react';
 import Account from '@material-ui/icons/AccountCircleOutlined';
 import "./Mails.css";
 
-function Mails() {
+function Mails(details) {
     return (
-        <div className="mails">
-            <div className="mail-1">
-                <div className="mail-profile">
-                    <Account />
-                </div>
-                <div className="mail-content">
-                    <h4>Title of Mail</h4>
-                    <h5>Subject</h5>
-                    <p>This is a Message, just for testing</p>
-                </div>
-            </div>
-            <div className="mail-1">
-                <div className="mail-profile">
-                    <Account />
-                </div>
-                <div className="mail-content">
-                    <h4>Title of another Mail</h4>
-                    <h5>Congratulations</h5>
-                    <p>This is another Message, just for testing</p>
+        <div>
+            <div className="mails">
+                <div className="mail-1">
+                    <div className="mail-profile">
+                        <Account />
+                    </div>
+                    <div className="mail-content">
+                        <h4>{details.items.sender}</h4>
+                        <h5>{details.items.sub}</h5>
+                        <p>{details.items.msg}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,3 +22,4 @@ function Mails() {
 }
 
 export default Mails
+ 

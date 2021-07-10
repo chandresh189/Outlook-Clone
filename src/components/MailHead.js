@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import CheckCircleIcon from '@material-ui/icons/CheckCircleOutlineOutlined';
 import ExpandIcon from '@material-ui/icons/ExpandMoreOutlined';
 import "./MailHead.css"
 import Mails from './Mails';
 
-function MailHead() {
+function MailHead(props) {
     return (
         <div className="mail">
             <div className="mail-head">
@@ -17,7 +17,11 @@ function MailHead() {
                     <button>Filter <ExpandIcon /></button>
                 </div>
             </div>
-            <Mails />
+            {   
+                props.obj.map((mail) => {
+                return <Mails items={mail} key={mail.sno} />
+            }) }
+
         </div>
     )
 }
