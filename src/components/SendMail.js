@@ -1,4 +1,5 @@
 import React from 'react'
+import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import "./SendMail.css"
 
@@ -10,6 +11,7 @@ function SendMail(props) {
 
     function HandleSubmit(e) {
         e.preventDefault();
+        sendEmail(e);
         if(!to || !message) {
             alert("Can't be Empty")
         }
@@ -17,6 +19,18 @@ function SendMail(props) {
             props.GetDataFromSendMail(to, subject, message, cc);
         }
     }
+    
+    function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm('gmail', 'template_q3byg2l', e.target, 'user_DWBXwm0tqER2t5BBJJXHB')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      }
+
     return (
         <div className="send-mail">
             <form action="" onSubmit={HandleSubmit}>
@@ -32,7 +46,7 @@ function SendMail(props) {
                 <input className="bor" type="textarea" value={message} name="message" onChange = {(e) => setMessage(e.target.value)} id="message" />
                 <div className="buttons">
                     {/* <button id="send-btn" onClick={()=>props.addToListHandeler({subject: 'this is redux subject', message: 'this is a redux message'})}>Send</button> */}
-                    <button id="send-btn">Send</button>
+                    <button id="send-btn" >Send</button>
                     <button id="discard-btn">Discard</button>
                 </div>
             </form>

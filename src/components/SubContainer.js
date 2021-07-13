@@ -16,8 +16,8 @@ function SubContainer(props) {
         {
             sno: 2,
             sub: 'Subject 2',
-            msg: 'This is another msg',
-            sender: 'From nalla'
+            msg: 'This is another msg bro',
+            sender: 'From Majee'
         }
     ]);
 
