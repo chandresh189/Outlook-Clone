@@ -2,8 +2,10 @@ import React from 'react'
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import "./SendMail.css"
+import env from "react-dotenv";
 
 function SendMail(props) {
+    
     const [to, setTo] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
@@ -22,7 +24,8 @@ function SendMail(props) {
     
     function sendEmail(e) {
         e.preventDefault();
-        emailjs.sendForm('gmail', 'template_q3byg2l', e.target, 'user_DWBXwm0tqER2t5BBJJXHB')
+        console.log(env.SECRET);
+        emailjs.sendForm('gmail', 'template_q3byg2l', e.target, `${env.SECRET}`)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
