@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import FeatureTray from './FeatureTray'
 import MailHead from './MailHead'
 import SendMail from './SendMail'
-// import ContactUs from './ContactUs'
 import "./SubContainer.css"
 
 function SubContainer(props) {
@@ -10,14 +9,14 @@ function SubContainer(props) {
         {   
             sno: 1,
             sub: 'Subject 1',
-            msg: 'This is a message bro',
+            msg: 'This is a message.',
             sender: 'Me'
         },
         {
             sno: 2,
             sub: 'Subject 2',
-            msg: 'This is another msg bro',
-            sender: 'From Majee'
+            msg: 'This is another message,',
+            sender: 'From CS'
         }
     ]);
 
@@ -37,7 +36,6 @@ function SubContainer(props) {
             <MailHead obj={mailItems}/>
             {
                 props.show?<SendMail GetDataFromSendMail={GetDataFromSendMail} />:null
-                // <ContactUs />
             }
         </div>
     )
