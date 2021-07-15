@@ -1,5 +1,26 @@
 [Outlook Clone Frontend Design.](https://outlookclone.vercel.app/)
 ![Show](public/DFD.png)
+Steps To Run
+
+📁 Clone the Project in your local desktop.
+1. Open Command Line and then type
+```
+$ git clone {the url to the GitHub repo}
+```
+This clones the repo
+
+2. cd into the new folder and type
+```
+$ npm install
+```
+This installs the required dependencies
+
+3. To run the React project.
+```
+$ npm start
+```
+🙂 Projecct will Run on your desktop.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
