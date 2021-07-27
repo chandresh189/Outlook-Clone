@@ -21,11 +21,11 @@ function SendMail(props) {
             props.GetDataFromSendMail(to, subject, message, cc);
         }
     }
-    
+    const template = 'template_q3byg2l';
     function sendEmail(e) {
         e.preventDefault();
         console.log(env.SECRET);
-        emailjs.sendForm('gmail', 'template_q3byg2l', e.target, `${env.SECRET}`)
+        emailjs.sendForm('gmail', 'template_id', e.target, `${env.SECRET}`)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
